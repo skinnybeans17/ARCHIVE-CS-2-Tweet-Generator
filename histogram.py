@@ -1,7 +1,3 @@
-import sys
-
-file = str(sys.argv[1])
-
 def histogram(file):
     with open(file, 'r') as f:
         text = f.read().split()
