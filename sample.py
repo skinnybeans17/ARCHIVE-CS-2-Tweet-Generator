@@ -15,7 +15,7 @@ def probability(histogram):
     total_amount = len(histogram.values())
     percentages = {}
     for key in histogram:
-        percentages[key] = str(round(histogram[key] / total_amount + 100, 2))
+        percentages[key] = str(round(histogram[key] / total_amount, 2))
 
     return percentages
 
