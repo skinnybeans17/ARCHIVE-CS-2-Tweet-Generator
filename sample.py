@@ -1,8 +1,6 @@
 import random
 from histogram import histogram
 
-message = 'one fish, two fish, red fish, blue fish'
-
 def random_word(histogram):
     word_list = histogram
     words = list(word_list)
@@ -11,7 +9,7 @@ def random_word(histogram):
 
     return word_list
 
-def probability(histogram):
+def sample_word(histogram):
     total_amount = len(histogram.values())
     percentages = {}
     for key in histogram:
@@ -22,4 +20,4 @@ def probability(histogram):
 if __name__ == '__main__':
     histogram = histogram("onefish.txt")
     print(random_word(histogram))
-    print(probability(histogram))
+    print(sample_word(histogram))
